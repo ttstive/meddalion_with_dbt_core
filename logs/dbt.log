@@ -1,0 +1,30 @@
+[0m21:04:23.272246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110aaafd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b10d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b37750>]}
+
+
+============================== 21:04:23.275064 | 2bd5781a-3195-44c8-9d4f-1f98776a7d4a ==============================
+[0m21:04:23.275064 [info ] [MainThread]: Running with dbt=1.11.7
+[0m21:04:23.275386 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'introspect': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'write_json': 'True', 'no_print': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'log_path': 'logs', 'warn_error': 'None', 'log_cache_events': 'False', 'static_parser': 'True', 'debug': 'False', 'profiles_dir': '/Users/elmaia/.dbt', 'version_check': 'True', 'invocation_command': 'dbt init', 'use_colors': 'True', 'empty': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True'}
+[0m21:04:26.086406 [debug] [MainThread]: Starter project path: /Users/elmaia/Development/meddalion_with_dbt_core/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m21:04:26.100743 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:04:26.101297 [info ] [MainThread]: Setting up your profile.
+[0m21:04:34.994794 [info ] [MainThread]: Profile dbt_project written to /Users/elmaia/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:04:35.004839 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 11.772474, "process_in_blocks": "0", "process_kernel_time": 0.354864, "process_mem_max_rss": "205897728", "process_out_blocks": "0", "process_user_time": 1.049115}
+[0m21:04:35.007014 [debug] [MainThread]: Command `dbt init` succeeded at 21:04:35.006831 after 11.78 seconds
+[0m21:04:35.008007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1024a3dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b11750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b10710>]}
+[0m21:04:35.008728 [debug] [MainThread]: Flushing usage events
+[0m21:04:35.761575 [debug] [MainThread]: An error was encountered while trying to flush usage events
