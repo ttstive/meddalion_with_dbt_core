@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+  - name: northwind
+    description: "raw data of the sales system of the company"
+    schema: dbt_dw_seeds
+    loader: bigquery
+
+
+    tables:
+      - name: orders
+        description: "data about the orders of the company"
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+            description: "unique identifier for the order"
+          - name: customer_id
+            description: "unique identifier for the customer"
+          - name: employee_id
+            description: "unique identifier for the employee responsible for the order"
+          - name: order_date
+            description: "date of the order"
+          - name: required_date
+            description: "date when the order is required"
+          - name: shipped_date
+            description: "date when the order was shipped"
+          - name: ship_via
+            description: "identifier for the shipping method used for the order"
+          - name: freight
+            description: "freight cost of the order"
+          - name: ship_name
+            description: "name of the shipping destination"
+          - name: ship_address
+            description: "address of the shipping destination"
+          - name: ship_city
+            description: "city of the shipping destination"
+          - name: ship_region
+            description: "region of the shipping destination"
+          - name: ship_postal_code
+            description: "postal code of the shipping destination"
+          - name: ship_country
+            description: "country of the shipping destination"

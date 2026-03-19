@@ -1,0 +1,47 @@
+version: 2
+sources:
+  - name: finance
+    description: "raw data from the financial system"
+    schema: data_set_financial
+    loader: bigquery
+    loaded_at_field: data_atualizacao
+    meta:
+      owner: "Elmaia"
+    freshness: 
+      error_after:
+        count: 2
+        period: day
+      warn_after:
+        count: 1
+        period: day
+    
+    tables:
+      - name: dados_financeiros
+        description: "data about the financial of the company"
+        columns:
+          - name: nome 
+            description: "name of the financial transaction"
+          - name: data 
+            description: "date of the financial transaction"
+          - name: valor 
+            description: "amount of the financial transaction"
+          - name: status 
+            description: "status of the financial transaction"
+          - name: banco 
+            description: "bank associated with the financial transaction"
+          - name: destino 
+            description: "destination of the financial transaction"
+          - name: responsavel 
+            description: "person responsible for the financial transaction"
+          - name: tipo 
+            description: "type of the financial transaction"
+          - name: valor_real 
+            description: "real value of the financial transaction"
+          - name: categoria 
+            description: "category of the financial transaction"
+          - name: mes 
+            description: "month of the financial transaction"
+          - name: id 
+            description: "unique identifier for the financial transaction"
+            tests:
+              - not_null
