@@ -21,9 +21,9 @@ models:
       materialized: table
       tags: ["staging"]
     sap:
-      schema: sap
+      +schema: sap
       materialized: sap
-      tags: ["sap"]
+      +tags: ["comercial"]
     
     intermediate:
       materialized: :ephemeral

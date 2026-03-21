@@ -12,7 +12,7 @@ sources:
         description: "data about the orders of the company"
         columns:
           - name: order_id
-            tests:
+            data_tests:
               - unique
               - not_null
             description: "unique identifier for the order"
@@ -42,3 +42,16 @@ sources:
             description: "postal code of the shipping destination"
           - name: ship_country
             description: "country of the shipping destination"
+  
+      - name: shippers
+        description: "data about the shippers of the company"
+        columns:
+          - name: shipper_id
+            data_tests:
+              - unique
+              - not_null
+            description: "unique identifier for the shipper"
+          - name: company_name
+            description: "name of the shipping company"
+          - name: phone
+            description: "phone number of the shipping company"
